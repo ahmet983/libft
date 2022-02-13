@@ -23,4 +23,4 @@ void	*ft_calloc(size_t count, size_t size)
 	return (mem);
 }
 
-// bellekte acilan bir yeri 0 ile doldurur
+// bellekte acilan bir yeri 0 ile doldurur.
