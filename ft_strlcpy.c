@@ -6,31 +6,31 @@
 /*   By: acomak <acomak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 10:21:29 by acomak            #+#    #+#             */
-/*   Updated: 2022/02/14 13:33:24 by acomak           ###   ########.fr       */
+/*   Updated: 2022/02/14 16:15:35 by acomak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t  ft_strlcpy(char *dest, char *src, size_t n)
+size_t	ft_strlcpy(char *dest, char *src, size_t n)
 {
-    size_t  c;
-    size_t  i;
+	size_t	c;
+	size_t	i;
 
-    c = 0;
-    i = 0;
-    while (src[c] != '\0')
-        c++;
-    if (n != 0)
-    {
-        while (src[i] != '\0' && i < (n - 1))
-        {
-            dest[i] = src[i];
-            i++;
-        }
-        dest[i] = '\0';
-    }
-    return (c);
+	c = 0;
+	i = 0;
+	while (src[c] != '\0')
+		c++;
+	if (n != 0)
+	{
+		while (src[i] != '\0' && i < (n - 1))
+		{
+			dest[i] = src[i];
+			i++;
+		}
+		dest[i] = '\0';
+	}
+	return (c);
 }
 
 // src den dest'e kadar n kadar kopyalar
