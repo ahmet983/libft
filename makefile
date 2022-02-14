@@ -6,7 +6,7 @@
 #    By: acomak <acomak@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/11 12:13:45 by acomak            #+#    #+#              #
-#    Updated: 2022/02/11 15:22:39 by acomak           ###   ########.fr        #
+#    Updated: 2022/02/14 11:51:44 by acomak           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,3 +42,8 @@ bonus:			$(OBJS) $(BONUS_OBJS)
 				ar -rcs $(NAME) $(OBJS) $(BONUS_OBJS)
 
 .PHONY:			all clean fclean re bonus
+
+git:
+	git add .
+	git commit -m "$m"
+	git push:
