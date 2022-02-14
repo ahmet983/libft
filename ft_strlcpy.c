@@ -6,7 +6,7 @@
 /*   By: acomak <acomak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 10:21:29 by acomak            #+#    #+#             */
-/*   Updated: 2022/02/14 13:04:21 by acomak           ###   ########.fr       */
+/*   Updated: 2022/02/14 13:33:24 by acomak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ size_t  ft_strlcpy(char *dest, char *src, size_t n)
     c = 0;
     i = 0;
     while (src[c] != '\0')
-            c++;
+        c++;
     if (n != 0)
     {
         while (src[i] != '\0' && i < (n - 1))
