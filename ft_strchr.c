@@ -6,26 +6,26 @@
 /*   By: acomak <acomak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 10:20:45 by acomak            #+#    #+#             */
-/*   Updated: 2022/02/10 10:20:50 by acomak           ###   ########.fr       */
+/*   Updated: 2022/02/14 13:03:02 by acomak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *str, int c)
+char    *ft_strchr(const char *str, int c)
 {
-	size_t	index;
+    int     i;
 
-	index = 0;
-	while (str[index])
-	{
-		if (str[index] == (char)c)
-			return ((char *)&str[index]);
-		index++;
-	}
-	if (c == '\0')
-		return ((char *)(str + index));
-	return (NULL);
+    i = 0;
+    while (str[i])
+    {
+        if (str[i] == c)
+        {
+            return ((char *)str);
+        }
+        i++;
+    }
+    return (NULL);
 }
 
 // soldan baslayarak bir kelimede istedigimiz kelimeyi bulunca

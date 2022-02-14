@@ -6,25 +6,22 @@
 /*   By: acomak <acomak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 10:19:47 by acomak            #+#    #+#             */
-/*   Updated: 2022/02/10 10:19:49 by acomak           ###   ########.fr       */
+/*   Updated: 2022/02/14 13:02:33 by acomak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *word, int latter, size_t length)
+void    *ft_memset(void *str, int c, size_t n)
 {
-	size_t	index;
-	char	*new_word;
+    unsigned char   *ptr;
 
-	index = 0;
-	new_word = (char *) word;
-	while (index < length)
-	{
-		new_word[index] = latter;
-		index++;
-	}
-	return (new_word);
+    ptr = str;
+    while (n-- > 0)
+    {
+    	*ptr++ = c;
+    }
+    return (str);
 }
 
 // bellekte bir kelimede istenilen bir harfle istenilen uzunluk kadar

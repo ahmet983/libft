@@ -6,26 +6,25 @@
 /*   By: acomak <acomak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 10:19:25 by acomak            #+#    #+#             */
-/*   Updated: 2022/02/10 10:19:27 by acomak           ###   ########.fr       */
+/*   Updated: 2022/02/14 13:03:21 by acomak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+void    *ft_memcpy(void *dest, const void *src, size_t n)
 {
-	unsigned char		*str1;
-	const unsigned char	*str2;
+    unsigned char           *dt;
+    const unsigned char     *sc;
 
-	if (!dest && !src)
-		return (0);
-	str1 = dest;
-	str2 = src;
-	while (n-- > 0)
-	{
-		*str1++ = *str2++;
-	}
-	return (dest);
+    dt = (char *)dest;
+    sc = (char *)src;
+    while (n > 0)
+    {
+        *dt++ = *sc++;
+        n--;
+    }
+    return (dt);
 }
 
 // src'yi dest'e kopyalar fakat çakışmalar olabilir

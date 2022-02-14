@@ -6,18 +6,19 @@
 /*   By: acomak <acomak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 10:22:47 by acomak            #+#    #+#             */
-/*   Updated: 2022/02/10 10:22:49 by acomak           ###   ########.fr       */
+/*   Updated: 2022/02/14 13:04:53 by acomak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_tolower(int ch)
+int     ft_tolower(int c)
 {
-	if (ch >= 65 && ch <= 90)
-		return (ch + 32);
-	else
-		return (ch);
+    if (c >= 65 && c <= 90)
+    {
+        return (c + 32);
+    }
+    return (c);
 }
 
 // buyuk harfi kucuge cevirir
