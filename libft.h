@@ -6,7 +6,7 @@
 /*   By: acomak <acomak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 10:23:10 by acomak            #+#    #+#             */
-/*   Updated: 2022/02/12 22:17:33 by acomak           ###   ########.fr       */
+/*   Updated: 2022/02/14 13:14:14 by acomak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 //size_t
 size_t	ft_strlen(const char *c);
 size_t	ft_strlcat(char *dest, char *src, size_t size);
-size_t	ft_strlcpy(char *dst, const char *src, size_t size);
+size_t  ft_strlcpy(char *dest, char *src, size_t n);
 
 //void
 void	*ft_memset(void *word, int latter, size_t length);
