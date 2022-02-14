@@ -6,13 +6,13 @@
 /*   By: acomak <acomak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 10:22:47 by acomak            #+#    #+#             */
-/*   Updated: 2022/02/14 16:09:56 by acomak           ###   ########.fr       */
+/*   Updated: 2022/02/14 16:33:54 by acomak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_tolower(int c)
+int	sft_tolower(int c)
 {
 	if (c >= 65 && c <= 90)
 	{

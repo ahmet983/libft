@@ -6,29 +6,24 @@
 #    By: acomak <acomak@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/11 12:13:45 by acomak            #+#    #+#              #
-#    Updated: 2022/02/14 11:58:12 by acomak           ###   ########.fr        #
+#    Updated: 2022/02/14 16:33:47 by acomak           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS = $(shell find . -type f ! -name "ft_lst*.c" -name "*.c")
 
-OBJS			= $(SRCS:.c=.o)
-
-
-BONUS = $(wildcart ft_lst*.c)
-
-BONUS_OBJS		= $(BONUS:.c=.o)
+BONUS = $(shell find . -type f -name "ft_lst*.c")
 
 CC				= gcc
 RM				= rm -f
-CFLAGS			= -Wall -Wextra -Werror -I.
-
+CFLAGS			= -Wall -Wextra -Werror -I
 NAME			= libft.a
 
 all:			$(NAME)
 
-$(NAME):		$(OBJS)
-				ar -rcs $(NAME) $(OBJS)
+$(NAME):		
+				$(CC) $(CFLAGS) -c $(SRCS)
+				ar -rcs $(NAME) *.o
 
 clean:
 				$(RM) $(OBJS) $(BONUS_OBJS)
@@ -38,12 +33,13 @@ fclean:			clean
 
 re:				fclean $(NAME)
 
-bonus:			$(OBJS) $(BONUS_OBJS)
-				ar -rcs $(NAME) $(OBJS) $(BONUS_OBJS)
-
-.PHONY:			all clean fclean re bonus
+bonus:			$(CC) $(CFLAGS) -c $(SRCS) $(BONUS)      // Eğer -c yi kullanmasaydım main hatası verecekti
+				ar -rcs $(NAME) *.o
 
 git:
-	git add .
-	git commit -m "$m"
-	git push
+				git add .
+				git commit -m "$m"
+				git push
+	
+
+.PHONY:			all clean fclean re bonus
