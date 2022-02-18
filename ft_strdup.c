@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: acomak <acomak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/10 10:20:58 by acomak            #+#    #+#             */
-/*   Updated: 2022/02/10 10:20:59 by acomak           ###   ########.fr       */
+/*   Created: 2022/02/16 21:58:21 by acomak            #+#    #+#             */
+/*   Updated: 2022/02/16 22:07:50 by acomak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,4 +32,4 @@ char	*ft_strdup(const char *str)
 	return (p1);
 }
 
-// sonuna '\0' koyabilmek icin + 1 ekledik
+//yeni bir dizin açıp ona mallocla yer açıp kopyalar

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: acomak <acomak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/10 10:19:06 by acomak            #+#    #+#             */
-/*   Updated: 2022/02/14 16:23:20 by acomak           ###   ########.fr       */
+/*   Created: 2022/02/16 21:56:04 by acomak            #+#    #+#             */
+/*   Updated: 2022/02/18 14:38:25 by acomak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,12 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+/*
+int main ()
+{
+  unsigned char *j = "ahmet";
+  unsigned char k = 'm';
+  printf("%p", ft_memchr(j, k, 4));
+}
+*/
 // bir stringdeki bir kelimenin bellekteki değerini döndürür

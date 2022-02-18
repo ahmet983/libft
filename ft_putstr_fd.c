@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: acomak <acomak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/10 10:20:28 by acomak            #+#    #+#             */
-/*   Updated: 2022/02/12 22:17:49 by acomak           ###   ########.fr       */
+/*   Created: 2022/02/16 21:57:49 by acomak            #+#    #+#             */
+/*   Updated: 2022/02/16 22:07:53 by acomak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,8 @@
 
 void	ft_putstr_fd(char const *s, int fd)
 {
-	int	i;
-
-	i = 0;
 	if (!s)
-	{
-		return ;
-	}
-	while (s[i])
-	{
-		ft_putchar_fd(s[i], fd);
-		i++;
-	}
+		write(fd, "(NULL)", 6);
+	else
+		write(fd, s, ft_strlen(s));
 }

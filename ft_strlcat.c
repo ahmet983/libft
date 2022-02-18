@@ -5,14 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: acomak <acomak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/10 10:21:18 by acomak            #+#    #+#             */
-/*   Updated: 2022/02/10 10:21:20 by acomak           ###   ########.fr       */
+/*   Created: 2022/02/16 21:59:15 by acomak            #+#    #+#             */
+/*   Updated: 2022/02/16 22:07:47 by acomak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-size_t	ft_strlen(const char *str);
 
 size_t	ft_strlcat(char *dest, char *src, size_t size)
 {
@@ -37,11 +35,14 @@ size_t	ft_strlcat(char *dest, char *src, size_t size)
 		i++;
 		j++;
 	}
-	dest[j] = '\0';
+		dest[j] = '\0';
 	return (dlen + slen);
 }
 
-// src'nin yanına dest'i ekler fakat ekleme yaparken size
+// dest'in yanına src'yi ekler fakat ekleme yaparken size
 // dest'in uzunluğundan sayarak başlar
 // bu nedenlse size - dlen yapıyoruz
-// -1 yaparak '\0' ı siliyoruz
+// -1 yaparak bir eksik karakter alıyoruz ki
+// dest'in sonuna null karakteri de ekleyebilelim
+// -1 yapmasaydık 1 karakter fazla alıp NULL u da ekleyecekti
+// ve bu sefer istediğimizden 1 fazla karakter kopyalamış olacaktı

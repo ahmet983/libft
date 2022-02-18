@@ -1,25 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: acomak <acomak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/16 21:59:44 by acomak            #+#    #+#             */
-/*   Updated: 2022/02/16 22:07:45 by acomak           ###   ########.fr       */
+/*   Created: 2022/02/16 21:55:41 by acomak            #+#    #+#             */
+/*   Updated: 2022/02/16 22:08:09 by acomak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *c)
+t_list	*ft_lstnew(void *content)
 {
-	size_t	i;
+	t_list	*new_list;
 
-	i = 0;
-	while (c[i])
-	{
-		i++;
-	}
-	return (i);
+	new_list = malloc(sizeof(t_list));
+	if (!new_list)
+		return (NULL);
+	new_list->content = content;
+	new_list->next = NULL;
+	return (new_list);
 }
+
+//new_list->content = content yapmamızın sebebi
+// fonksiyonda content'e gelen şeyi yazdırmak

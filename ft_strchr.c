@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: acomak <acomak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/10 10:20:45 by acomak            #+#    #+#             */
-/*   Updated: 2022/02/14 16:17:21 by acomak           ###   ########.fr       */
+/*   Created: 2022/02/16 21:58:13 by acomak            #+#    #+#             */
+/*   Updated: 2022/02/16 22:07:51 by acomak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,17 @@
 
 char	*ft_strchr(const char *str, int c)
 {
-	int	i;
+	size_t	index;
 
-	i = 0;
-	while (str[i])
+	index = 0;
+	while (str[index])
 	{
-		if (str[i] == c)
-		{
-			return ((char *)str);
-		}
-		i++;
+		if (str[index] == (char)c)
+			return ((char *)&str[index]);
+		index++;
 	}
+	if (c == '\0')
+		return ((char *)(str + index));
 	return (NULL);
 }
 

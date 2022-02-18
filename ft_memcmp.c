@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: acomak <acomak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/10 10:19:16 by acomak            #+#    #+#             */
-/*   Updated: 2022/02/10 10:19:18 by acomak           ###   ########.fr       */
+/*   Created: 2022/02/16 21:56:20 by acomak            #+#    #+#             */
+/*   Updated: 2022/02/18 15:21:23 by acomak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,4 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 
 // bellekte belirlenen 2 stringi n kadar karsilastirir
 // eğer fark görürse farkını alıp döndürür aynıysa 0 döndürür
+//son da ki döngüde NULL karakteri almamasi için -1 çıkarılır

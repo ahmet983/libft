@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: acomak <acomak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/10 10:17:13 by acomak            #+#    #+#             */
-/*   Updated: 2022/02/10 10:17:20 by acomak           ###   ########.fr       */
+/*   Created: 2022/02/16 21:41:36 by acomak            #+#    #+#             */
+/*   Updated: 2022/02/16 21:42:00 by acomak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_atoi(const char *str)
 	if (*str == '-' || *str == '+')
 	{
 		if (*str == '-')
-			n = -1;
+			n = n * -1;
 	str++;
 	}
 	while (*str != 0 && *str >= '0' && *str <= '9')
@@ -38,3 +38,9 @@ int	ft_atoi(const char *str)
 	}
 	return (num);
 }
+/*
+Atoi char olarak girilen sayı dizinini intager bir dizine çeviri
+satır 22: 0 nul 9 ht 10 nl 11 vt 12 np 13 cr 32 spacear boşluklar atlanır
+satır 24: Artılar esgeçilir eksiler ise artıya çevrilir
+satır 32: Tüt dönüşümü ve basamaklandırma sağlıyor
+*/

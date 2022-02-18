@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: acomak <acomak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/10 10:22:36 by acomak            #+#    #+#             */
-/*   Updated: 2022/02/10 10:22:38 by acomak           ###   ########.fr       */
+/*   Created: 2022/02/16 22:01:05 by acomak            #+#    #+#             */
+/*   Updated: 2022/02/16 22:07:41 by acomak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,3 +39,5 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	}
 	return (NULL);
 }
+
+//dizede başlangıç indeksinden sonra kaç karakter alcağımızı belirtir

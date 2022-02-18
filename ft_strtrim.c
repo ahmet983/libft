@@ -5,23 +5,22 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: acomak <acomak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/10 10:22:26 by acomak            #+#    #+#             */
-/*   Updated: 2022/02/10 10:22:28 by acomak           ###   ########.fr       */
+/*   Created: 2022/02/16 22:00:55 by acomak            #+#    #+#             */
+/*   Updated: 2022/02/16 22:07:42 by acomak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_char_in_set(char c, char const *set)
+static int	checker(char c, char const *set)
 {
-	size_t	i;
+	int	i;
 
 	i = 0;
 	while (set[i])
 	{
-		if (set[i] == c)
+		if (set[i++] == c)
 			return (1);
-		i++;
 	}
 	return (0);
 }
@@ -29,22 +28,26 @@ static int	ft_char_in_set(char c, char const *set)
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*str;
-	size_t	i;
-	size_t	start;
-	size_t	end;
+	int		i;
+	int		j;
+	int		k;
 
-	start = 0;
-	while (s1[start] && ft_char_in_set(s1[start], set))
-		start++;
-	end = ft_strlen(s1);
-	while (end > start && ft_char_in_set(s1[end -1], set))
-		end--;
-	str = (char *)malloc(sizeof(*s1) * (end - start + 1));
+	i = 0;
+	k = 0;
+	if (s1 == 0 || set == 0)
+		return (NULL);
+	j = ft_strlen(s1);
+	while (s1[i] && checker(s1[i], set))
+		i++;
+	while (j > i && checker(s1[j - 1], set))
+		j--;
+	str = (char *)malloc(sizeof(char) * (j - i + 1));
 	if (!str)
 		return (NULL);
-	i = 0;
-	while (start < end)
-		str[i++] = s1[start++];
-	str[i] = 0;
+	while (i < j)
+		str[k++] = s1[i++];
+	str[k] = '\0';
 	return (str);
 }
+
+//stringde belirlediğimiz karakterleri baştan ve sondan kırpar
