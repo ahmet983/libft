@@ -6,7 +6,7 @@
 /*   By: acomak <acomak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/16 21:58:13 by acomak            #+#    #+#             */
-/*   Updated: 2022/02/16 22:07:51 by acomak           ###   ########.fr       */
+/*   Updated: 2022/02/23 16:53:42 by acomak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,21 @@
 
 char	*ft_strchr(const char *str, int c)
 {
-	size_t	index;
+	size_t	i;
 
-	index = 0;
-	while (str[index])
+	i = 0;
+	while (str[i])
 	{
-		if (str[index] == (char)c)
-			return ((char *)&str[index]);
-		index++;
+		if (str[i] == (char)c)
+			return ((char *)&str[i]);
+		i++;
 	}
 	if (c == '\0')
-		return ((char *)(str + index));
+		return ((char *)(str + i));
 	return (NULL);
 }
 
-// soldan baslayarak bir kelimede istedigimiz kelimeyi bulunca
+// soldan baslayarak bir kelimede istedigimiz harfi bulunca
 // devamını döndürür
 // '\0' gönderilirse de dizenin sonunu göstereceği için
 // hiç bir şey görmeyiz boş gönderirse de null değer döndürür
