@@ -6,7 +6,7 @@
 /*   By: acomak <acomak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/16 21:58:05 by acomak            #+#    #+#             */
-/*   Updated: 2022/02/23 16:53:45 by acomak           ###   ########.fr       */
+/*   Updated: 2022/02/23 17:32:54 by acomak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,4 +88,14 @@ char	**ft_split(char const *s, char c)
 	return (res);
 }
 
+
+int main()
+{
+        int i = 0;
+        char **a;
+        a = ft_split("marhaba.selamlar.mmm", '.');
+        printf("%s\n",a[0]);
+        printf("%s\n",a[1]);
+        printf("%s",a[2]);
+}
 //dizeyi belirlediğim karakterden böler
