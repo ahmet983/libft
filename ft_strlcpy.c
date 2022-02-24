@@ -6,7 +6,7 @@
 /*   By: acomak <acomak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/16 21:59:32 by acomak            #+#    #+#             */
-/*   Updated: 2022/02/16 22:07:46 by acomak           ###   ########.fr       */
+/*   Updated: 2022/02/24 17:10:59 by acomak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	return (index);
 }
 
-// src den dest'e kadar n kadar kopyalar
+// src den dest'e n kadar kopyalar
 // src nin uzunluğunu döndürür
-//strlcpy'nin özelligi bir eksik alması
+// strlcpy'nin özelligi bir eksik alması
 // bu yüzden - 1 yaptık null karakteri de almak için

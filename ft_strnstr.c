@@ -6,7 +6,7 @@
 /*   By: acomak <acomak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/16 22:00:35 by acomak            #+#    #+#             */
-/*   Updated: 2022/02/16 22:07:44 by acomak           ###   ########.fr       */
+/*   Updated: 2022/02/24 16:36:33 by acomak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,4 +36,13 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 	}
 	return (NULL);
 }
+
+/* int main()
+{
+  char *s1 = "galatasarayaa";
+  char *s2 = "ray";
+  size_t n = 13;
+  
+  printf("%s", ft_strnstr(s1, s2, n));
+} */
 // n kadar bolgede bir kelimede istenilen kelimeyi döndürür

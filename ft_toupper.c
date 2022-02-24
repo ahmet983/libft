@@ -6,7 +6,7 @@
 /*   By: acomak <acomak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/16 22:01:30 by acomak            #+#    #+#             */
-/*   Updated: 2022/02/16 22:07:39 by acomak           ###   ########.fr       */
+/*   Updated: 2022/02/24 17:32:47 by acomak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,4 @@ int	ft_toupper(int ch)
 	else
 		return (ch);
 }
-
 // kucuk harfi buyuge cevirir

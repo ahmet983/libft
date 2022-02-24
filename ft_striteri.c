@@ -6,7 +6,7 @@
 /*   By: acomak <acomak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/16 21:58:39 by acomak            #+#    #+#             */
-/*   Updated: 2022/02/16 22:07:49 by acomak           ###   ########.fr       */
+/*   Updated: 2022/02/24 17:11:01 by acomak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,4 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
+//Dışarıdan girilen fonksiyonu çalıştırır

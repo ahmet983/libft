@@ -6,7 +6,7 @@
 /*   By: acomak <acomak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/16 22:00:17 by acomak            #+#    #+#             */
-/*   Updated: 2022/02/16 22:07:45 by acomak           ###   ########.fr       */
+/*   Updated: 2022/02/24 17:10:55 by acomak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,3 +30,5 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 
 // 2 stringi n kadar karşılaştırır aynıysa 0
 // farklıysa 0 dan farklı bir değer döndürür
+// iki strinktede aynı olan kısımlardan hemen sonraki karakterin 
+// değerlerini karşılaştırır

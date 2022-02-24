@@ -6,7 +6,7 @@
 /*   By: acomak <acomak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/16 22:00:55 by acomak            #+#    #+#             */
-/*   Updated: 2022/02/16 22:07:42 by acomak           ###   ########.fr       */
+/*   Updated: 2022/02/24 17:10:28 by acomak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,4 +50,11 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (str);
 }
 
+/* int main()
+{
+  char *s1 = "galatasarayaa";
+  char *set = "ray";
+  
+  printf("%s", ft_strtrim(s1, set));
+} */
 //stringde belirlediğimiz karakterleri baştan ve sondan kırpar

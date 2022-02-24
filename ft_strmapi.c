@@ -6,7 +6,7 @@
 /*   By: acomak <acomak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/16 22:00:00 by acomak            #+#    #+#             */
-/*   Updated: 2022/02/16 22:07:34 by acomak           ###   ########.fr       */
+/*   Updated: 2022/02/24 17:10:57 by acomak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,3 +30,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	}
 	return (res);
 }
+
+// Dışardan string ve fonksiyon belirtiyoruz sonrasında 
+// strdup a gönderip stringimizi açtığımız belleğe yazıyoruz
+// sonrasında fonksiyonumuzun gerekliliklerini yerine getirerek resi
+// değişime uğratıp ekrana yazdırıyoruz.
