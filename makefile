@@ -6,7 +6,7 @@
 #    By: acomak <acomak@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/16 22:01:56 by acomak            #+#    #+#              #
-#    Updated: 2022/02/25 11:50:24 by acomak           ###   ########.fr        #
+#    Updated: 2022/02/25 15:39:00 by acomak           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,6 +25,10 @@ $(NAME):
 				$(CC) $(CFLAGS) -c $(SRCS)
 				ar -rcs $(NAME) *.o
 
+bonus:			
+				$(CC) $(CFLAGS) -c $(BONUS)
+				ar -rcs $(NAME) *.o
+	
 clean:
 				$(RM) $(OBJS) $(BONUS_OBJS)
 
@@ -32,9 +36,6 @@ fclean:			clean
 				$(RM) $(NAME)
 
 re:				fclean $(NAME)
-
-bonus:			$(CC) $(CFLAGS) -c $(SRCS) $(BONUS)      // Eğer -c yi kullanmasaydım main hatası verecekti
-				ar -rcs $(NAME) *.o
 
 git:
 				git add .
