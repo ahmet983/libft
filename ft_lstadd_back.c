@@ -6,7 +6,7 @@
 /*   By: acomak <acomak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/16 21:53:45 by acomak            #+#    #+#             */
-/*   Updated: 2022/02/23 16:53:49 by acomak           ###   ########.fr       */
+/*   Updated: 2022/02/25 14:41:50 by acomak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,6 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	else
 		*lst = new;
 }
+// Eğer lstmin ilkinin nexti null değilse if e girecek ve ifte
+// lastımın en sonuna gelcek ve en sonuncunun nextini newin contentine 
+// bağlayacak

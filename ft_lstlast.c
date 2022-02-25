@@ -6,7 +6,7 @@
 /*   By: acomak <acomak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/16 21:54:51 by acomak            #+#    #+#             */
-/*   Updated: 2022/02/16 21:55:04 by acomak           ###   ########.fr       */
+/*   Updated: 2022/02/25 14:42:47 by acomak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,3 +20,4 @@ t_list	*ft_lstlast(t_list *lst)
 		lst = lst->next;
 	return (lst);
 }
+// lst min nexti null değilse lstmin en sonuna gelecek
